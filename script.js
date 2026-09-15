@@ -12,10 +12,6 @@ document.getElementById('addTaskBtn').addEventListener('click', function () {
 
     const li = document.createElement('li');
 
-    li.style.fontSize = "20px";
-
-    // li.setAttribute("class", "thisclass")
-
     li.classList.add('task');
 
     li.innerHTML = `

@@ -1,50 +1,48 @@
-# 🗂️ Task Manager
+# Task Manager
 
-A clean, simple, and fully functional **Task Management Web App** that runs entirely in your browser — no server required!  
-Manage your tasks effortlessly with **Create, Read, Update, and Delete** (CRUD) capabilities, with data saved in **localStorage** so your to-do list is always ready when you are.
+A minimal to-do list built with plain HTML, CSS, and JavaScript. No build step, no dependencies, no server — just open it in a browser.
 
----
+## Features
 
-## ✨ Features
+- Add a task via the input field
+- Delete a task from the list
+- Clean, responsive card-based UI
 
-- ✅ **Add new tasks** with a simple input form.
-- ✏️ **Edit tasks** directly in the list.
-- 🗑️ **Delete tasks** you no longer need.
-- 📦 **Persistent storage** using the browser's `localStorage`.
-- ⚡ **Instant updates** — no page reloads required.
+Tasks live only in memory — refreshing the page clears the list, since there's no persistence layer yet.
 
----
+## Getting Started
 
-## 🛠️ Tech Stack
+Clone the repo and open `index.html` directly in your browser:
 
-- **HTML5** – Structure of the app
-- **CSS3** – Styling and layout
-- **JavaScript (Vanilla)** – App logic and interactivity
-- **LocalStorage API** – Data persistence in the browser
+```bash
+git clone https://github.com/yourusername/task_manager.git
+cd task_manager
+open index.html   # or just double-click the file
+```
 
----
+## Usage
 
-## 📦 Installation
+1. Type a task into the input field.
+2. Click **Add Task** to add it to the list.
+3. Click **Delete** on any task to remove it.
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/task_manager.git
-   cd task_manager
-2. **Open the app:**
-   Simply open index.html in your browser — **no build step or
-   server needed**
----
+Note: pressing Enter in the input field does not submit — use the **Add Task** button.
 
-## 🚀 Usage
-	1.	Add a Task: Type into the input field and click Add.
-	2.	Mark as Done: Click the checkbox to mark a task complete.
-	3.	Edit a Task: Click the edit icon, make changes, and save.
-	4.	Delete a Task: Click the trash icon to remove it.
+## Project Structure
 
-## 📂 Project Structure
-  Task_Manager/
-│
-├── index.html      # Main HTML file
-├── style.css       # Styles for the app
+```
+Task_Manager/
+├── index.html      # Markup
+├── style.css       # Styling
 ├── script.js       # App logic
-└── README.md       # Project documentation
+└── README.md       # This file
+```
+
+## Roadmap
+
+Ideas for future improvements:
+
+- [ ] Persist tasks with `localStorage`
+- [ ] Mark tasks as complete
+- [ ] Edit existing tasks
+- [ ] Submit new tasks with Enter
